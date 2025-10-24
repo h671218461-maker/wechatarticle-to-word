@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信文章导出工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>微信文章导出工具</h1>
+        <p>输入微信文章链接，一键导出为Word文档</p>
+        
+        <div class="input-group">
+            <input type="url" id="wechatUrl" 
+                   placeholder="https://mp.weixin.qq.com/s/..." 
+                   required>
+            <button id="exportBtn" onclick="exportArticle()">导出为Word</button>
+        </div>
+        
+        <div id="message" class="message"></div>
+        
+        <div class="tips">
+            <h3>使用说明：</h3>
+            <ul>
+                <li>复制微信文章的完整链接</li>
+                <li>粘贴到上方输入框</li>
+                <li>点击导出按钮下载Word文档</li>
+                <li>处理可能需要几秒钟时间，请耐心等待</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
